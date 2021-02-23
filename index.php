@@ -28,6 +28,7 @@ switch ($ROUTE){
         break ;
     }
 
-        $error = new MyError();
-        $error->display("There Is No Valid Route", "", MyError::$ERROR_NO_ROUTE);
+    default:{ $error = new MyError();
+        $error->display("There Is No Valid Route", "", MyError::$ERROR_NO_ROUTE);}
+
 }
